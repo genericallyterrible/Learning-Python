@@ -1,3 +1,10 @@
 {
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "files.exclude": {
+        ".venv": true, // Python virtual env
+        "**/.git": true, // Local git folders
+        "**/~$*": true, // Files open in Excel
+        "**/.cache": true, // CachedExcelReader cache dirs
+        "**/__pycache__": true,
+    },
 }
